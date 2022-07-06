@@ -1,0 +1,17 @@
+@use "./configs/color-pallete.scss" as colors;
+@use "./configs/color-pairs.scss" as pairs;
+@import './configs/typography.scss';
+
+@each $name, $value in pairs.$color-pairs {
+  :root {
+    --#{$name}: #{nth($value, 1)};
+  }
+  .dark {
+    --#{$name}: #{nth($value, 2)};
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

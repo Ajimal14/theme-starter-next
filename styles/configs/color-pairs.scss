@@ -1,0 +1,6 @@
+@use './color-pallete.scss' as colors;
+
+$color-pairs: (
+    "app-text-color": (colors.$gray-4, colors.$gray-1),
+    "app-bg": (colors.$gray-1, colors.$gray-4),
+)
